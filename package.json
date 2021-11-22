@@ -1,7 +1,8 @@
 {
   "name": "storybookexample",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "private": true,
+  "main": "src/index.js",
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
@@ -11,7 +12,7 @@
     "storybook": "start-storybook -p 7007",
     "build-storybook": "build-storybook"
   },
-  "dependencies": {
+  "peerDependencies": {
     "react": "17.0.2",
     "react-native": "0.66.3"
   },

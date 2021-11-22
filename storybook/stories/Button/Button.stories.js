@@ -20,7 +20,6 @@ const Button = ({type, ...props}) => (
 
 storiesOf('Button', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
-  .addDecorator(withKnobs)
   .add('Primary', () => (
     <Button label={text('label', 'Primary')} type="primary" />
   ))

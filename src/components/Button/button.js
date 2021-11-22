@@ -1,7 +1,8 @@
 import React from 'react';
 import {Pressable, StyleSheet, Text} from 'react-native';
+import {ButtonProps} from './types';
 
-const Button = ({onPress, label, type, ...props}) => {
+const Button = ({onPress, label, type, ...props}: ButtonProps) => {
   const container = StyleSheet.flatten([
     styles.container,
     type === 'secondary' ? styles.secondary : styles.primary,
